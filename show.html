@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel=”stylesheet” type=”text/css” href=”estilo.css”>
+	<title>slider-test</title>
+	<!--estilo del slider con css -->
+ <style type="text/css">
+.slider{
+ width: 95%;
+ margin auto;
+ overflow: hidden;
+}
+.slider ul{
+ padding: 0;
+ display: flex;
+ /*segun la cantidad de imagenes agregar
+ o restar 100% EJEMPLO: 5 imagenes
+ width: 500%; */
+ width: 400%;
+ /*estilo de animacion*/
+animation: alternar 20s infinite;
+}
+.slider li{
+ list-style: none;
+ width: 100%;
+}
+.slider img {
+	width: 100%
+}
+@keyframes alternar {
+	/*direccion de la animacion izquierda*/
+ 0% {margin-left: 0%;}
+ 20% {margin-left: 0%;}
+
+ 25% {margin-left: -100%;}
+ 45% {margin-left: -100%;}
+
+ 50% {margin-left: -200%;}
+ 70% {margin-left: -200%;}
+
+ 75% {margin-left: -300%;}
+ 100% {margin-left: -300%;}
+ /*entre mas imagenes tenga mas hay que aumentarle al margin-left */
+}
+
+ </style>
+</head>
+<body>
+<!--div contenedor del slider -->
+    <div class="slider"> 
+     <ul>
+     	<!--reemplazar imagenes -->
+        <li><img src="foto1.png"></li>	
+        <li><img src="foto2.png"></li>
+        <li><img src="foto3.png"></li>
+        <li><img src="foto4.png"></li> 
+     </ul>
+    </div>
+</body>
+</html>

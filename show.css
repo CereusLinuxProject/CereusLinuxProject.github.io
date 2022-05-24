@@ -1,0 +1,43 @@
+ .slider{
+ width: 95%;
+ margin auto;
+ overflow: hidden;
+}
+.slider ul{
+ padding: 0;
+ display: flex;
+ /*segun la cantidad de imagenes agregar
+ o restar 100% EJEMPLO: 5 imagenes
+ width: 500%; */
+ width: 500%;
+ /*estilo de animacion*/
+animation: n 16s infinite;
+
+}
+
+.slider li{
+ list-style: none;
+ width: 100%;
+}
+.slider img {
+	width: 66%
+}
+@keyframes n {
+	/*direccion de la animacion izquierda*/
+ 0% {margin-left: 0%;}
+ 15% {margin-left: 0%;}
+
+ 20% {margin-left: -100%;}
+ 35% {margin-left: -100%;}
+
+ 40% {margin-left: -200%;}
+ 55% {margin-left: -200%;}
+
+ 60% {margin-left: -300%;}
+ 75% {margin-left: -300%;}
+
+ 80% {margin-left: 0%;}
+ 100% {margin-left: 0%;}
+ /*entre mas imagenes tenga mas hay que aumentarle al margin-left */
+}
+

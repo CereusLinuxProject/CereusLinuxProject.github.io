@@ -1,0 +1,26 @@
+/*WebPage by ItzSelenux-->*/
+body{background: #0a0a0a; color: #ffffff}
+
+    * {padding:0px; margin:0px; font-family: 'Roboto', sans-serif;}
+#header
+    {margin:auto;}
+ul, ol 
+    {list-style:none;}
+.nav
+    {width:100%; background:#66bb6a; height:40px; font-family: 'Roboto', sans-serif;}
+
+.nav li a 
+    {background-color:#66bb6a;color:#ffffff; 
+    text-decoration:none; padding:10px 16px; display:block;}
+
+.nav li a:hover
+    {background-color:#4e8f51}
+
+.nav >li 
+    {float:right;}
+
+.nav li ul
+    {display:none; position:absolute; min-width:120px;}
+
+.nav li:hover > ul
+    {display:block;}
