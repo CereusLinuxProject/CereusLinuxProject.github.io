@@ -1,134 +1,88 @@
-<!--WebPage by ItzSelenux-->
-
-<!--HEADERS-->
 <!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="css.css">
-<link rel="stylesheet" href="show.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+ <html lang=eng>
+ <!--HEADERS-->
+  <head>
+   <!--TITLE-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <title> Cereus Linux</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <script src="navbar.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+  </head>
+  
+<!--NAVBAR-->
+  <body>
+    <div inc="navbar.html"></div>
+    <script>includeHTML();</script>
 
-<!--TITLE-->
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-<title> Cereus Linux</title>
-</head>
+<!--BANNER-->
+   <section class="header">
+    <div class="texto-inicio">
+     <h1>Cereus Linux</h1>
+     <p>A Void Linux respin that cares in give <br>an user-friendly experience.</p>
+     <a href="downloads.html">Get it now!</a>
+    </div>
+   </section>
 
-<!--WebPage content-->
-<body bgcolor="#0f0f0f" text="white"> 
-    <!--Main Bar-->
-<div id="header">
-    <ul class="nav" border: 1px solid white;>
-        
-        <li><a href="https://sourceforge.net/p/cereus-linux/blog/" target="_blank" rel="noopener noreferrer">Blog</a>
-        <li><a href="about.html">About</a>
-        <li><a href="downloads.html">Downloads</a><ul>
+<!--CONTENT-->
+  <!--feautures-->
+   <section class="contenido">
+    <div class="intro-contenido">
+     <h1>For you,<br>For everyone</h1>
+     <p>We work to provide you the best experience in Linux Desktop.</p>
+    </div>
+    <div class="features">
+     <div class="tarjeta-basics">
+      <h3>Only with the essencial</h3>
+      <p>Cereus Linux provides an essencial colection of software</p>
+     </div>
+     <div class="tarjeta-rolling">
+      <h3>Rolling release</h3>
+      <p>Have the most new software</p>
+     </div>
+     <div class="tarjeta-secure">
+      <h3>Secure</h3>
+      <p>Open source and secure, <br>your OS wil be alway be your OS</p>
+     </div>
+     <div class="tarjeta-repos">
+      <h3>Added software</h3>
+      <p>Find everything you need with the <br><a href="https://sourceforge.net/projects/cereus-linux/files/repos/"  target="_blank">Cereus repos</a></p>
+     </div>
+    </div>
+   </section>
 
-            <li><a href="lxqt.html">Lxqt</a>
-            <li><a href="xfce.html">Xfce</a>
-            <li><a href="plasma.html">Plasma</a>
-            <li><a href="cinnamon.html">Cinnamon</a></ul>
-
-        <li><a href="index.html">Home</a>
-        </ul>
-    <!--content-->
-<center>
-    <a href="https://sourceforge.net/projects/cereus-linux/" target="_blank" rel="noopener noreferrer"><img width="33%" src="res/textlogo.png"></a>
-    <a href="https://sourceforge.net/projects/cereus-linux/" target="_blank" rel="noopener noreferrer"><img width="11%" src="res/logo.png"></a>
-    
-    <!--SlideShow-->
-    <div class="slider"> 
-        <ul>
-            <!--reemplazar imagenes -->
-           <li><img src="res/editions/cinnamon.png"></li>	
-           <li><img src="res/editions/lxqt.png"></li>
-           <li><img src="res/editions/plasma.png"></li>
-           <li><img src="res/editions/xfce.png"></li>
-           <li><img src="res/editions/xfce.png"></li>  <!--esto corrige un bug-->
-        </ul>
+     <!--Editions-->
+      <div class="intro-contenido">
+       <h1>Choose<br>What do you want</h1>
+       <p>Cereus Linux offers some desktops options</p>
+      </div>
+      <div class="features">
+       <div class="lxqt">
+        <h3 style="color:#ffffff;">LXQt</h3>
+        <p style="color:#e6e6e6;">Lightweight Desktop based on Qt</p>
        </div>
-    <h1><a href="index2.html">VER OTrOS SLIDERS</a></h1>
-    <br><br>
-    <h1>Cereus Linux is a  <span style="color: #66bb6a">Void Linux </span>respin focused on give an user-friendly experience</h1>
-    <h2>We have 4 editions:</h2>
-<br>
-
-<!--Table-->
-    
-    <table border="1" width="66%" style="text-align:center">
-    <tr>
-        <td>
-            <h2>Edition</h2>
-        </td>
-        <td>
-            <h2>Architecture</h2>
-        </td>
-        <td>
-            <h2>Status</h2>
-        </td>
-    </tr>
-    <!---->
-    <tr>
-        <td>
-            <a href="lxqt.html">   
-                <img src="res/editions/lxqt-logo-mini.png"> </a>
-                <figcaption>LxQt</figcaption>
-        </td>
-        <td>
-         <h2> x32 & x64</h2>    
-        </td>
-        <td>
-            <h2> Testing </h2>    
-        </td>
-    </tr>
-    <!---->
-    <tr>
-        <td>
-            <a href="xfce.html">   
-                <img src="res/editions/xfce-logo-mini.png"> </a>
-                <figcaption>Xfce</figcaption>
-        </td>
-        <td>
-         <h2> x32 & x64</h2>    
-        </td>
-        <td>
-            <h2> Not Available </h2>    
-        </td>
-    </tr>
-    <!---->
-    <tr>
-        <td>
-            <a href="plasma.html">   
-                <img src="res/editions/plasma-logo-mini.png"> </a>
-                <figcaption>Plasma</figcaption>
-        </td>
-        <td>
-         <h2>x64</h2>    
-        </td>
-        <td>
-            <h2> Not Available </h2>    
-        </td>
-    </tr>
-    <!---->
-    <tr>
-        <td>
-            <a href="cinnamon.html">   
-                <img src="res/editions/cinnamon-logo-mini.png"> </a>
-                <figcaption>Cinnamon</figcaption>
-        </td>
-        <td>
-         <h2>x64</h2>    
-        </td>
-        <td>
-            <h2> Not Available </h2>    
-        </td>
-    </tr>
-</table>
-<h4>Musl Versions is only available on x64, GlibC versions is available for x32 & x64</h2>
-<br>
-<h5>Cereus Linux 2022, Page Created & Designed by ItzSelenux</h5> 
-<!--CLOSERS-->
-</center>
-</body>
-</html>
+       <div class="xfce">
+        <h3 style="color:#ffffff;">Xfce</h3>
+        <p style="color:#e6e6e6;">Lightweight Desktop based on GTK</p>
+       </div>
+       <div class="plasma">
+        <h3 style="color:#ffffff;">Plasma</h3>
+        <p style="color:#e6e6e6;">Modern and highly customizable desktop based on QT</p>
+       </div>
+       <div class="cinnamon">
+        <h3 style="color:#ffffff;">Cinnamon</h3>
+        <p style="color:#e6e6e6;">Modern and Classic Desktop based on GTK</p>
+       </div>
+      </div>
+     </section>
+   
+   <section class="footer">
+    <h2>Cereus Linux</h2>
+    <h5>Copyright 2022 Cereus Linux. All right reserved.</h5>
+    <h6>Cereus is backed up by the Cereus Team.</h6>
+   </section>
+  </body>
+ </html>
