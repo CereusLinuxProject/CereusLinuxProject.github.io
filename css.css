@@ -68,7 +68,7 @@ nav img:hover {
  display:block;
  left: 6%;
  margin-top: 6px;
- padding: 4vh 0vh;
+ padding: 4vh 4vh 4vh 2vh;
  background: #232323;
  border-radius: 16px;
 }
