@@ -50,14 +50,28 @@ nav img:hover {
  transform: scale(1.04);
  box-shadow: 0px 0px 30px rgba(10, 10 ,10 ,0.2);
 }
-.navbar >li 
-    {float:right;}
 
-.navbar li ul
-    {display:none; position:absolute; min-width:120px;}
+.navbar >li {
+ float:right;
+}
+.navbar li ul {
+ display:none;
+ position:absolute;
+ min-width:120px;
+}
 
-.navbar li:hover > ul
-    {display:block;}
+.navbar li > ul {
+ transition: 0.6s;
+}
+
+.navbar li:hover > ul {
+ display:block;
+ left: 6%;
+ margin-top: 6px;
+ padding: 4vh 0vh;
+ background: #232323;
+ border-radius: 16px;
+}
 
 /* ---  --- */ 
 .header {
