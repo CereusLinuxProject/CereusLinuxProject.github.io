@@ -225,6 +225,17 @@ nav img:hover {
  text-decoration: none;
 }
 
+
+.features-desk h3 {
+ padding-top: 10px;
+ color: #FAFAFA;
+}
+
+.features-desk p {
+ padding: 10px 0px; 
+ color: #FAFAFA;
+}
+
 /* --- tarjetas --- */ 
 .tarjeta-basics {
  flex-basis: 32%;
