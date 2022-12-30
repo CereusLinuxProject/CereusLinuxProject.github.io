@@ -1,3 +1,7 @@
+:root {
+    --cereus-dark: #232323;
+}
+
 * {
  margin: 0px;
  padding: 0px;
@@ -11,7 +15,7 @@ nav {
  display: flex;
  justify-content: space-between;
  align-items: center;
- background-color: #232323;
+ background-color: var(--cereus-dark);
 }
 
 nav img {
@@ -69,7 +73,7 @@ nav img:hover {
  left: 6%;
  margin-top: 6px;
  padding: 4vh 4vh 4vh 2vh;
- background: #232323;
+ background: var(--cereus-dark);
  border-radius: 16px;
 }
 
@@ -144,7 +148,7 @@ nav img:hover {
  font-size: 20px;
  font-weight: bold;
  padding: 8px 25px;
- background-color: #232323;
+ background-color: var(--cereus-dark);
  color: #f2f2f2;
  transition: 0.6s;
 }
@@ -411,7 +415,7 @@ nav img:hover {
  width: 100%;
  min-height: 10vh;
  text-align: center;
- background-color: #232323;
+ background-color: var(--cereus-dark);
  color: #f2f2f2;
 }
 
@@ -507,7 +511,7 @@ nav img:hover {
 
 @media (prefers-color-scheme: dark) {
  body {
-  background-color: #232323;
+  background-color: var(--cereus-dark);
   color: #f2f2f2;
  }
  
@@ -524,11 +528,11 @@ nav img:hover {
 @media (prefers-color-scheme: light) {
  body {
   background-color: #f2f2f2;
-  color: #232323;
+  color: var(--cereus-dark);
  }
  
  .footer {
- background-color: #232323;
+ background-color: var(--cereus-dark);
  } 
  
  .intro-contenido h1:hover {
