@@ -1,21 +1,15 @@
-function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) 
-    {
-      elmnt = z[i];
-      file = elmnt.getAttribute("inc");
-      if (file) 
-      {
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() 
-        {
-          if (this.readyState == 4) 
-          {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            elmnt.removeAttribute("inc");
-          }}      
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        return;
-      }}};
+async function includeHTML() {
+  const z = document.querySelectorAll('[inc]');
+  for (const elmnt of z) {
+    const file = elmnt.getAttribute('inc');
+    try {
+      const response = await fetch(file);
+      if (response.ok) {
+        elmnt.innerHTML = await response.text();
+        elmnt.removeAttribute('inc');
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  }
+}
