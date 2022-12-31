@@ -1,5 +1,6 @@
 :root {
     --cereus-dark: #232323;
+    --cereus-light: #FAFAFA;
 }
 
 * {
@@ -386,7 +387,7 @@ nav img:hover {
     transition: 0.6s;
    }
 .dev-dc:hover {
-    box-shadow: 0px 0px 30px #ffffff;
+    box-shadow: 0px 0px 30px var(--cereus-light);
     transform: scale(1.02);
    }
    
@@ -402,7 +403,7 @@ nav img:hover {
     transition: 0.6s;
    }
 .dev-kf:hover {
-    box-shadow: 0px 0px 30px #ffffff;
+    box-shadow: 0px 0px 30px var(--cereus-light);
     transform: scale(1.02);
    }
 .dev-slnx {
@@ -418,7 +419,7 @@ nav img:hover {
    }
    
 .dev-slnx:hover {
-    box-shadow: 0px 0px 30px #ffffff;
+    box-shadow: 0px 0px 30px var(--cereus-light);
     transform: scale(1.02);
    }
 /* --- Footer --- */  
