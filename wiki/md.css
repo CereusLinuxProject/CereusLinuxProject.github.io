@@ -135,7 +135,7 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
+  color: #43a64f;
   text-decoration: none;
 }
 
@@ -823,7 +823,7 @@
   overflow: auto;
   font-size: 85%;
   line-height: 1.45;
-  background-color: #f6f8fa;
+  background-color: #1a1a1a;
   border-radius: 3px;
 }
 

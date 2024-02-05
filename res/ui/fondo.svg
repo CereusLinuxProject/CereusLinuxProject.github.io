@@ -7,7 +7,7 @@
    viewBox="0 0 2560 1440"
    version="1.1"
    id="svg5"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
    sodipodi:docname="fondo.svg"
    inkscape:export-filename="/home/doubleau/Imágenes/Wallpapers/BI.png"
    inkscape:export-xdpi="90"
@@ -29,14 +29,14 @@
      inkscape:snap-bbox="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="0.22507243"
-     inkscape:cx="1506.1818"
-     inkscape:cy="830.84366"
-     inkscape:window-width="1920"
-     inkscape:window-height="1000"
-     inkscape:window-x="-3"
-     inkscape:window-y="-3"
+     inkscape:cx="1508.4033"
+     inkscape:cy="833.06516"
+     inkscape:window-width="1384"
+     inkscape:window-height="860"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g260"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:bbox-paths="false"
      inkscape:bbox-nodes="true"
@@ -44,7 +44,13 @@
      inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
-       id="grid824" />
+       id="grid824"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="false" />
   </sodipodi:namedview>
   <defs
      id="defs2" />
@@ -64,7 +70,7 @@
        id="g260"
        transform="matrix(2.0816439,0,0,2.0816439,1502.4797,326.44558)">
       <circle
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke-width:0.267534;paint-order:markers fill stroke"
+         style="fill:#232323;fill-opacity:1;fill-rule:evenodd;stroke-width:0.267534;paint-order:markers fill stroke"
          id="path1760"
          cx="190"
          cy="190"

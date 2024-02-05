@@ -1,21 +1,34 @@
 #!/bin/bash
-input_directory="./wiki/"
-output_file="wikilist.html"
-echo "" > "$output_file"
 
+input_directory="./wiki"
+output_file="wikilist.html"
+
+generate_list()
+{
+	local current_directory="$1"
+	local current_output_file="$2"
+
+	echo "<ul>" >> "$current_output_file"
+
+	for item in "$current_directory"/*; do
+		if [ -d "$item" ]; then
+			item_name=$(basename "$item")
+			echo "<li><a href=\"$current_directory/$item_name/index.html\">$item_name</a>" >> "$current_output_file"
+			generate_list "$current_directory/$item_name" "$current_output_file"
+
+			echo "</li>" >> "$current_output_file"
+		fi
+	done
+
+	echo "</ul>" >> "$current_output_file"
+}
+
+echo "" > "$output_file"
 echo "<html>
 <body>
 <ul>" > "$output_file"
 
-for folder in "$input_directory"/*; do
-	if [ -d "$folder" ]; then
-		folder_name=$(basename "$folder")
-		echo "<li><a href=\"/wiki/$folder_name/index.html\">$folder_name</a></li>" >> "$output_file"
-		cp -v ./TEMPLATE.html "$input_directory/$folder_name/index.html"
-		sed -i "s/@TITLE/$folder_name/g" "$input_directory/$folder_name/index.html"
-	fi
-done
-
+generate_list "$input_directory" "$output_file"
 echo "</ul>
 </body>
 </html>" >> "$output_file"
