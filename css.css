@@ -36,9 +36,6 @@ border-radius: 16px;}
 .header
 {width: 100%;min-height: 90vh;background: #43A64F;background-position: center;background-size: cover;}
 
-.selogo
-{width: 333px; margin: 15% 0 0 60%;}
-
 .weltext
 {position: absolute;top: 41%;left: 15%;width: 50%;color: #29382a;flex-direction: column;}
 .weltext h1
@@ -54,17 +51,13 @@ color: #f2f2f2;transition: 0.6s;}
 
 
 .dynabanner
-{position: relative;top: 41%;left: 15%;width: 50%;color: #29382a;}
+{position: relative;top: 41%;left: 15%;width: 70%;color: #29382a;}
 .dynabanner h1
 {font-size: 42px;font-weight: bold;color: #1d381f;transition: 0.6s;}
 .dynabanner h1:hover
 {text-shadow: 0px 0px 40px rgba(10, 10, 10, 0.4);transform: scale(1.02);}
 .dynabanner p
 {margin-top: 20px;margin-bottom: 30px;font-size: 40px;}
-.dynabanner a
-{position: relative;display: inline-block;text-decoration: none;border-radius: 20px;
-font-size: 20px;font-weight: bold;padding: 8px 25px;background-color: var(--cereus-dark);
-color: #f2f2f2;transition: 0.6s;}
 
 .wiki_container
 {display: flex;width: 100%;}
@@ -81,20 +74,78 @@ color: #f2f2f2;transition: 0.6s;}
 font-size: 20px;font-weight: bold;padding: 8px 25px;background-color: #43a64f;
 color: #f2f2f2;transition: 0.6s;}
 
+
+
+/*Vertical*/
+@media only screen and (max-aspect-ratio: 1/1)
+{
+body
+{overflow-x: hidden;}
+.features
+{color: #1d381f;display: flex;text-align:
+center;justify-content: space-between;flex-direction: column;}
+.features li
+{list-style-type: none;border-radius: 30px;margin-bottom: 20px;
+box-sizing: border-box;background: #43A64F;background-position: center;
+background-size: cover;transition: 0.6s;}
+.features li:hover
+{box-shadow: 0px 0px 30px rgba(67, 166 ,79, 0.32);transform: scale(1.02);}
+.features img
+{width: 160px;}
+.features p
+{padding-top: 2vh;font-size: 24px;font-weight: 400;}
+
+.selogo
+{width: 30%; margin: 15% 0 0 15%;}
+.dynabanner a
+{position: relative;display: inline-block;text-decoration: none;border-radius: 20px;
+font-size: 20px;font-weight: bold;padding: 8px 25px;background-color: var(--cereus-dark);
+color: #f2f2f2;transition: 0.6s; width: 100%; left:-10%}
+.dynabanner img
+{width:60%}
+.depic img
+{width:100%}
+}
+
+/*Horizontal*/
+@media only screen and (min-aspect-ratio: 1/1)
+{
+.features
+{color: #1d381f;min-height: 30%;display: flex;text-align:
+center;justify-content: space-between;margin: 5% 0%;margin-top: 2%; flex-direction: row;}
+
+.features li
+{list-style-type: none;flex-basis: 32%;border-radius: 30px;margin: 2px 10px;padding: 20px 6px;
+box-sizing: border-box;background: #43A64F;background-position: center;
+background-size: cover;transition: 0.6s;}
+.features li:hover
+{box-shadow: 0px 0px 30px rgba(67, 166 ,79, 0.32);transform: scale(1.02);}
+.features img
+{width: 160px;}
+.selogo
+{width: 30%; margin: 15% 0 0 60%;}
+.dynabanner a
+{position: relative;display: inline-block;text-decoration: none;border-radius: 20px;
+font-size: 20px;font-weight: bold;padding: 8px 25px;background-color: var(--cereus-dark);
+color: #f2f2f2;transition: 0.6s;}
+.dynabanner img
+{width:30%}
+.depic img
+{width:100%}
+}
+
 .contenido
-{width: 95%;margin: auto;}
+{width: 90%;margin: auto;}
 .intro-contenido
-{min-height: 10vh;text-align: center;padding: 6vh 0vh;}
+{text-align: center;padding: 6vh 0vh;}
 .intro-contenido h1
-{font-size: 28px;transition: 0.4s;}
+{font-size: 26px;transition: 0.4s;}
 .intro-contenido h1:hover
 {text-shadow: 0px 0px 20px rgba(67, 166 ,79 , 0.32);transform: scale(1.034);}
 .intro-contenido p
 {padding-top: 2vh;font-size: 18px;font-weight: 400;}
 
-.features
-{color: #1d381f;min-height: 400px;display: flex;text-align:
-center;justify-content: space-between;margin: 5% 0%;margin-top: 2%;}
+
 .features h3
 {padding-top: 10px;}
 
@@ -107,15 +158,8 @@ center;justify-content: space-between;margin: 5% 0%;margin-top: 2%;}
 {padding-top: 10px;color: #FAFAFA;}
 .features-desk p
 {padding: 10px 0px; color: #FAFAFA;}
-/* --- cards --- */ 
-.features li
-{list-style-type: none;flex-basis: 32%;border-radius: 30px;margin: 2px 10px;padding: 20px 6px;
-box-sizing: border-box;background: #43A64F;background-position: center;
-background-size: cover;transition: 0.6s; }
-.features li:hover
-{box-shadow: 0px 0px 30px rgba(67, 166 ,79, 0.32);transform: scale(1.02);}
-.features img
-{width: 160px;}
+/* --- cards --- */
+
 
 /* --- Footer --- */  
  .footer
