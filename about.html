@@ -10,6 +10,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css.css">
 <script src="navbar.js"></script>
+<script src="translations.js"></script>
+<script src="https://itzselenux.github.io/SJTSW/sjtsw.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
@@ -25,29 +27,31 @@
 <ul class="features">
 	 <li>
 		<h3>KF_Art</h3>
-		<p>FOSS enthusiast, artist and writer.</p>
+		<p id="str-credits-kfart">FOSS enthusiast, artist and writer.</p>
 		<img src="res/devs/kf.png">
 	 </li>
 	 <li>
 		<h3>David Castro</h3>
-		<p>IT Technician</p>
+		<p id="str-credits-davidcastro">IT Technician</p>
 		<img src="res/devs/dc.png">
 	 </li>
 	 <li>
 		<h3>ItzSelenux</h3>
-		<p>Programmer, Artist and Ducks enthusiast</p>
+		<p id="str-credits-itzselenux">Programmer, Artist and Ducks enthusiast</p>
 		<img src="res/devs/slnx.png">
 	 </li>
 </ul>
 	</section>
 
-	<center>WebPage created by Doubleau15 and ItzSelenux</center>
+	<center id="str-credits">WebPage created by Doubleau15 and ItzSelenux</center>
+	<center id="str-credits2">Using <a href="https://github.com/itzselenux/sjtsw"><span style="color: #43a64f">SJTSW</span></a> as translation system</center>
 	<br>
 
 	<section class="footer">
 		<h2>Cereus Linux</h2>
-		<h5>Copyright 2024 Cereus Linux. All right reserved.</h5>
-		<h6>Cereus is backed up by the Cereus Team.</h6>
+		<h5 id="str-copyright">Copyright 2024 Cereus Linux. All rights reserved.</h5>
+		<h6 id="str-cereusteam">Cereus is backed up by the Cereus Team.</h6>
 	</section>
+<script>SJTSW_TranslatePage();</script>
 </body>
 </html>
