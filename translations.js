@@ -4,6 +4,7 @@ var translations =
 	{
 		'str-banner': ' Cereus Linux',
 		'str-banner-subtitle': ' A Void Linux based distribution,<br> that focuses in delivering a user-friendly experience.',
+		'str-banner-availableeditions': 'Available editions:',
 		'str-getit': 'Get it now!',
 		'str-slogantitle': 'For you,<br>For everyone',
 		'str-slogansubtitle': 'We work to provide you the best experience in Linux Desktop.',
@@ -21,7 +22,7 @@ var translations =
 		'str-copyright': 'Copyright 2024 Cereus Linux. All rights reserved.',
 		'str-cereusteam': 'Cereus is backed up by the Cereus Team.',
 
-		'str-credits': 'WebPage created by Doubleau15 and ItzSelenux',
+		'str-credits': 'WebPage created by ItzSelenux and Doubleau15',
 		'str-credits2': 'Using <a href="https://github.com/itzselenux/sjtsw"><span style="color: #43a64f">SJTSW</span></a> as translation system',
 		'str-credits-itzselenux': 'Programmer, Artist and Ducks enthusiast',
 		'str-credits-kfart': 'FOSS enthusiast, artist and writer.',
@@ -37,6 +38,7 @@ var translations =
 	{
 		'str-banner': ' Cereus Linux',
 		'str-banner-subtitle': ' Una distribución Linux basada en Void Linux<br> que se enfoca en ofrecer una experiencia amigable',
+		'str-banner-availableeditions': 'Ediciones disponibles:',
 		'str-getit': '¡Obténlo ahora!',
 		'str-slogantitle': 'Para tí,<br>Para todos',
 		'str-slogansubtitle': 'Trabajamos para brindarte la mejor experiencia en el escritorio de Linux.',
@@ -56,7 +58,7 @@ var translations =
 		'str-copyright': 'Derechos de autor 2024 Cereus Linux. Todos los derechos reservados.',
 		'str-cereusteam': 'Cereus está respaldado por el equipo de Cereus.',
 
-		'str-credits': 'Página creada por Doubleau15 e ItzSelenux',
+		'str-credits': 'Página creada por ItzSelenux y Doubleau15',
 		'str-credits2': 'Usando <a href="https://github.com/itzselenux/sjtsw"><span style="color: #43a64f">SJTSW</span></a> como sistema de traducciones',
 		'str-credits-itzselenux': 'Programador, Artista and entusiasta de los patos',
 		'str-credits-kfart': 'Entusiasta del FOSS, Artista and Escritor.',
