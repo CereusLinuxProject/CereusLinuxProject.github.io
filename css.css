@@ -35,11 +35,14 @@ box-shadow: 0px 0px 30px rgba(10, 10 ,10 ,0.2);}
 border-radius: 16px;}
 
 /* ---  --- */ 
+a
+{color: green;}
+
 .header
 {width: 100%;min-height: 90vh;background: #43A64F;background-position: center;background-size: cover;}
 
 .weltext
-{position: absolute;top: 41%;left: 15%;width: 50%;color: #29382a;flex-direction: column;}
+{position: absolute;top: 30%;left: 15%;width: 50%;color: #29382a;flex-direction: column;}
 .weltext h1
 {font-size: 42px;font-weight: bold;color: #1d381f;transition: 0.6s;}
 .weltext h1:hover
@@ -63,6 +66,11 @@ color: #f2f2f2;transition: 0.6s;}
 
 .wiki_container
 {display: flex;width: 100%;}
+
+.minilogo
+{position: absolute;top: 50%;transform: translate(-50%, -46%);}
+.minitext
+{top: 50%; margin-left:16px}
 
 .wiki_content 
 {width: 74%; right: 0px; padding: 20px}
@@ -125,7 +133,7 @@ background-size: cover;transition: 0.6s;}
 .features img
 {width: 160px;}
 .selogo
-{width: 30%; margin: 15% 0 0 60%;}
+{width: 30%; margin: 10% 0 0 60%;}
 .dynabanner a
 {position: relative;display: inline-block;text-decoration: none;border-radius: 20px;
 font-size: 20px;font-weight: bold;padding: 8px 25px;background-color: var(--cereus-dark);

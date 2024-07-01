@@ -1,39 +1,5 @@
 var translations = 
 {
-	'en':
-	{
-		'str-banner': ' Cereus Linux',
-		'str-banner-subtitle': ' A Void Linux based distribution,<br> that focuses in delivering a user-friendly experience.',
-		'str-banner-availableeditions': 'Available editions:',
-		'str-getit': 'Get it now!',
-		'str-slogantitle': 'For you,<br>For everyone',
-		'str-slogansubtitle': 'We work to provide you the best experience in Linux Desktop.',
-		'str-featurestitle1': 'Essentials Only',
-		'str-featuressubtitle1': 'Forget bloatware. Cereus only comes with essentials.',
-		'str-featurestitle2': 'Rolling release',
-		'str-featuressubtitle2': 'Have the latest software releases. Always.',
-		'str-featurestitle3': 'Secure',
-		'str-featurestitle3': 'Secure and open source, your OS, for you.',
-		'str-featurestitle4': 'Add software',
-		'str-downloadsubtitle1': 'Lightweight Desktop based on GTK',
-		'str-getit1': 'Get it now!',
-		'str-downloadsubtitle2': 'Lightweight Desktop based on Qt',
-		'str-getit2': 'Get it now!',
-		'str-copyright': 'Copyright 2024 Cereus Linux. All rights reserved.',
-		'str-cereusteam': 'Cereus is backed up by the Cereus Team.',
-
-		'str-credits': 'WebPage created by ItzSelenux and Doubleau15',
-		'str-credits2': 'Using <a href="https://github.com/itzselenux/sjtsw"><span style="color: #43a64f">SJTSW</span></a> as translation system',
-		'str-credits-itzselenux': 'Programmer, Artist and Ducks enthusiast',
-		'str-credits-kfart': 'FOSS enthusiast, artist and writer.',
-		'str-credits-davidcastro': 'IT Technician',
-
-		'str-navbar-home': 'HOME',
-		'str-navbar-downloads': 'DOWNLOADS',
-		'str-navbar-wiki': 'WIKI',
-		'str-navbar-blog': 'BLOG',
-		'str-navbar-about': 'ABOUT',
-	},
 	'es':
 	{
 		'str-banner': ' Cereus Linux',
@@ -46,9 +12,10 @@ var translations =
 		'str-featuressubtitle1': 'Olvídate del software innecesario. Cereus solo viene con lo esencial.',
 		'str-featurestitle2': 'Liberación continua',
 		'str-featuressubtitle2': 'Ten siempre las últimas versiones de software. Siempre.',
-		'str-featurestitle3': 'Seguro',
-		'str-featurestitle3': 'Seguro y de código abierto, tu sistema operativo, para ti.',
+		'str-featurestitle3': 'Seguro y de codigo abierto',
+		'str-featuressubtitle3': 'Tu sistema operativo, para Ti y de nadie mas',
 		'str-featurestitle4': 'Agregar software',
+		'str-featuressubtitle4': 'Encuentra todo lo que necesitas en los <a rel="noopener" href="https://sourceforge.net/projects/cereus-linux/files/repos/" target="_blank">Repositorios',
 		'str-downloadsubtitle1': 'Escritorio ligero basado en GTK',
 		'str-getit1': '¡Obténlo ahora!',
 		'str-downloadsubtitle2': 'Escritorio ligero basado en Qt',
@@ -69,5 +36,10 @@ var translations =
 		'str-navbar-wiki': 'WIKI',
 		'str-navbar-blog': 'BLOG',
 		'str-navbar-about': 'ACERCA DE',
+
+		'str-extra-repotitle': 'Cereus Linux usa los repositorios de Void Linux, pero complementados con los repositorios propios que contienen software extra',
+		'str-extra-reposubtitle': 'Si no puedes ver el siguiente contenido puedes abrir <a href="https://cereuslinuxproject.github.io/xrankmirrors/mirrorlist.lst">https://cereuslinuxproject.github.io/xrankmirrors/mirrorlist.lst</a>',
+		'str-extra-reposubtitle2': 'puedes encontrar los archivos srcpkg en <a href="https://github.com/CereusLinuxProject/cereus-packages">https://github.com/CereusLinuxProject/cereus-packages</a>',
+
 	}
 }

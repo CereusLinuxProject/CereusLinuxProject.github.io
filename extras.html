@@ -1,0 +1,82 @@
+<html lang="EN">
+<meta charset="UTF-8">
+<!--HEADERS-->
+<head>
+<!--TITLE-->
+<link rel="shortcut icon" type="image/png" href="res/DE/cereus-icon.png">
+<title>Cereus Linux</title>
+<meta name="description" content="Cereus Linux it's a Gnu/Linux distribution derived from Void Linux thar focuses on delivering a user friendly experience.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css.css">
+<script src="translations.js"></script>
+<script src="https://itzselenux.github.io/SJTSW/sjtsw.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+</head>
+
+<!--NAVBAR-->
+<body>
+	<iframe src="navbar.html" frameborder="0" width="100%" height="70px" scrolling="no"></iframe>
+
+<!--BANNER-->
+	<section class="header">
+	<div class="weltext">
+		<h1 id="str-extratitle"> Extra resources</h1>
+		<p id="str-extrasubtitle">This page contains extra resources about Cereus Linux</p>
+
+	<ul class="nav" border: 1px solid white;>
+		<li><a target="_parent" id="str-extras-artwork" href="#artwork">Artwork</a></li><br>
+		<li><a target="_parent" id="str-extras-mirrorlist" href="#mirrorlist">Cereus mirrorlist</a></li><br>
+
+	</ul>
+
+	</div>
+	</section>
+<center>
+	<section id="artwork"> <h1> Cereus Artwork</h1>
+
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/Branding/cereus-logo-1024x1024.svg">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/Branding/cereus-logo-dark-1024x1024.svg">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/Branding/cereus-logo-light-1024x1024.svg">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/Branding/cereus-logo-complete.svg">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/svg/cereus-logo-letters.svg">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/wallpapers/wallpaper1.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/wallpapers/wallpaper2.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/wallpapers/wallpaper3.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/wallpapers/wallpaper4.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/cereus-slogan.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/keep-updated.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/no-bloatware.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/runit.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/software.png">
+	<img width="33%" src="https://raw.githubusercontent.com/CereusLinuxProject/Cereus-Artwork/main/calamares-branding/void-based.png">
+
+	<section id="mirrorlist"> <h1> Cereus repo mirrorlist</h1>
+	<h4 id="str-extra-repotitle">Cereus Linux uses Void Linux repos, but complemented with Cereus Linux repos that contains extra software</h4>
+	<h4 id="str-extra-reposubtitle">if you can't see the content, you can open <a href="https://cereuslinuxproject.github.io/xrankmirrors/mirrorlist.lst">https://cereuslinuxproject.github.io/xrankmirrors/mirrorlist.lst</a><h4>
+	<div class="wikilist"id="content" style="white-space: pre-wrap; font-family: monospace;"></div>
+
+	<h4 id="str-extra-reposubtitle2">you can find srcpkg files in <a href="https://github.com/CereusLinuxProject/cereus-packages">https://github.com/CereusLinuxProject/cereus-packages</a></h4>
+
+	<script>
+		const url = 'https://raw.githubusercontent.com/CereusLinuxProject/xrankmirrors/main/mirrorlist.lst';
+		fetch(url)
+			.then(response => response.text())
+			.then(text => {
+				document.getElementById('content').textContent = text;
+			})
+			.catch(error => {
+				console.error('Error fetching the file:', error);
+			});
+	</script>
+
+</center>
+<script>SJTSW_TranslatePage();</script>
+	<section class="footer">
+		<h2>Cereus Linux</h2>
+		<h5 id="str-copyright">Copyright 2024 Cereus Linux. All rights reserved.</h5>
+		<h6 id="str-cereusteam">Cereus is backed up by the Cereus Team.</h6>
+	</section>
+</body>
+</html>
