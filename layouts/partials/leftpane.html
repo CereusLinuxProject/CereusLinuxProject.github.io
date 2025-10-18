@@ -1,7 +1,6 @@
 <!-- Right Pane -->
 
-<div id="left-container" class="{{ if and (ne .Type "blog") (ne .Type "wiki") }}hidden{{ end }}">
-
+<div id="left-container" class="{{ if or (and (ne .Type "blog") (ne .Type "wiki")) .IsNode }}hidden{{ end }}">
 	{{ partial "searchbar.html" . }}
 	{{ partial "posttoc.html" . }}
 </div>

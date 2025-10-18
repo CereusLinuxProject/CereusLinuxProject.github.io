@@ -27,7 +27,7 @@
 
 {{ else if eq $indextype "chapters" }}
 	<!-- Chapters section -->
-	{{ $chapters := where .Site.RegularPages "Section" "wiki" }}
+	{{ $chapters := where .Site.RegularPages "Section" .Section }}
 	{{ $grouped := dict }}
 	{{ range $chapters }}
 		{{ $section := .Params.section | default "Uncategorized" }}
