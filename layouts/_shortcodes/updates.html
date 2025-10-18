@@ -39,44 +39,69 @@ async function fetchCommits(url) {
 				}
 
 				commits.forEach(commit => {
-					const commitUrl = `https://codeberg.org/${repo.full_name}/commit/${commit.Sha1}`;
+					const commitUrl = "https://codeberg.org/" + repo.full_name + "/commit/" + commit.Sha1;
 					const message = commit.Message || "";
 
-					// Always use the first line as title
-					const [rawTitle, ...rest] = message.split(/\r?\n+/);
-					const title = rawTitle.trim();
-					const body = rest.length > 0 ? rest[0].trim() : "";
+					// First line is title, rest is body
+					const lines = message.split(/\r?\n+/);
+					const title = lines[0].trim();
+					const body = lines.length > 1 ? lines[1].trim() : "";
 
+					// Create table and elements manually
 					const table = document.createElement("table");
 					table.className = "commit-table";
 
-					table.innerHTML = `
-						<tr>
-							<td>
-								<img src="${user.avatar_url}" alt="avatar" />
-								<h3>
-									<a href="${user.html_url}" target="_blank">
-										${user.full_name || user.login}
-									</a>
-								</h3>
-							</td>
-							<td>
-								<h2>${repo.full_name}</h2>
-								<hr />
-								<h4>
-									<a href="${commitUrl}" class="commit-title" target="_blank">
-										${title}
-									</a>
-								</h4>
-								${body ? `<p>${body}</p>` : ""}
-								<div>
-									<a href="${commitUrl}" class="commit-date-button" target="_blank">
-										${new Date(commit.Timestamp || entry.created).toLocaleString()}
-									</a>
-								</div>
-							</td>
-						</tr>
-					`;
+					const tr = document.createElement("tr");
+
+					const tdUser = document.createElement("td");
+					const img = document.createElement("img");
+					img.src = user.avatar_url;
+					img.alt = "avatar";
+					tdUser.appendChild(img);
+
+					const h3 = document.createElement("h3");
+					const aUser = document.createElement("a");
+					aUser.href = user.html_url;
+					aUser.target = "_blank";
+					aUser.textContent = user.full_name || user.login;
+					h3.appendChild(aUser);
+					tdUser.appendChild(h3);
+
+					const tdRepo = document.createElement("td");
+					const h2 = document.createElement("h2");
+					h2.textContent = repo.full_name;
+					tdRepo.appendChild(h2);
+
+					const hr = document.createElement("hr");
+					tdRepo.appendChild(hr);
+
+					const h4 = document.createElement("h4");
+					const aCommit = document.createElement("a");
+					aCommit.href = commitUrl;
+					aCommit.className = "commit-title";
+					aCommit.target = "_blank";
+					aCommit.textContent = title;
+					h4.appendChild(aCommit);
+					tdRepo.appendChild(h4);
+
+					if (body) {
+						const p = document.createElement("p");
+						p.textContent = body;
+						tdRepo.appendChild(p);
+					}
+
+					const div = document.createElement("div");
+					const aDate = document.createElement("a");
+					aDate.href = commitUrl;
+					aDate.className = "commit-date-button";
+					aDate.target = "_blank";
+					aDate.textContent = new Date(commit.Timestamp || entry.created).toLocaleString();
+					div.appendChild(aDate);
+					tdRepo.appendChild(div);
+
+					tr.appendChild(tdUser);
+					tr.appendChild(tdRepo);
+					table.appendChild(tr);
 					container.appendChild(table);
 				});
 			});
