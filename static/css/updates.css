@@ -1,0 +1,104 @@
+:root {
+	--bg-color: #f5f5f5;
+	--text-color: #232323;
+	--table-bg: #ffffff;
+	--primary-color: #43a64f;
+	--link-color: #232323;
+	--header-color: #666666;
+	--button-bg: #43a64f;
+	--button-text: #ffffff;
+	--shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		/* Dark mode colors */
+		--bg-color: #121212;
+		--text-color: #e0e0e0;
+		--table-bg: #1e1e1e;
+	}
+}
+
+#commit-feed {
+	width: 66%;
+	margin: 0 auto;
+}
+.aboutpage .post .post-postcontent
+{
+    width:95%
+}
+
+
+.commit-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: var(--table-bg);
+	margin-bottom: 2em;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 6px var(--shadow-color);
+}
+
+.commit-table a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.commit-title {
+	color: var(--primary-color) !important;
+	font-weight: bold;
+}
+
+.commit-table h1 {
+	color: var(--header-color);
+	font-size: 1.5em;
+	margin: 0 0 0.3em;
+}
+
+.commit-table h3, .commit-table h4 {
+	margin: 0.5em 0;
+}
+
+.commit-table td {
+	vertical-align: top;
+	padding: 1em;
+}
+
+.commit-table td:first-child {
+	width: 30%;
+	text-align: center;
+	background-color: var(--primary-color);
+	color: var(--button-text);
+}
+
+.commit-table img {
+	max-width: 100px;
+	border-radius: 50%;
+	height: auto;
+}
+
+.commit-date-button {
+	display: inline-block;
+	background-color: var(--button-bg);
+	color: var(--button-text);
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin-top: 20px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-aspect-ratio: 1/1) {
+	.commit-table td {
+		display: block;
+		width: 100%;
+	}
+
+	.commit-table td:first-child {
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -6,7 +6,7 @@ authors:
   - ItsZariep
   - David Castro
 showDate: false
-url: "/about/"
+url: "/about/about"
 ---
 
 Cereus Linux is a Void Linux–based distribution specifically designed to provide a more user-friendly experience on the Linux desktop. It aims to combine the technical advantages of its base system with a more approachable and curated user environment.
