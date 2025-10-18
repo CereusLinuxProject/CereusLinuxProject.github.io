@@ -1,0 +1,67 @@
+{{ define "main" }}
+	<div id="main-container">
+	<div class="homecontainer">
+		<div class="glancewelcome">
+			<div>
+				<h1>Cereus Linux</h1>
+				<h3>{{ .Site.Params.Description }}</h3>
+				<p>Available Editions:</p>
+					{{ partial "miniglance.html" . }}
+			</div>
+			<div class="cereuslogo">
+				<img class="glance-banner" src="{{ "/img/banner.webp" | relURL }}" width="100%" /> 
+			</div>
+		</div>
+<div>
+
+<div class="features-container">
+	<article class="glance-card" style="--accent-bg: #43A64F; --fg: #eeeeee;">
+		<div class="glance-image-wrapper">
+			<img src="{{ "img/glance/basics.svg" | relURL }}" alt="Essentials only" class="ft-image">
+
+		</div>
+		<div class="post-info">
+			<h2 class="post-title">Essentials Only</h2>
+			<p class="post-description">Forget bloatware. Cereus only comes with essentials.</p>
+		</div>
+	</article>
+
+
+	<article class="glance-card" style="--accent-bg: #43A64F; --fg: #ffffff;">
+		<div class="glance-image-wrapper">
+			<img src="{{ "img/glance/rolling.svg" | relURL }}" alt="Rolling release" class="ft-image">
+		</div>
+		<div class="post-info">
+			<h2 class="post-title">Rolling release</h2>
+			<p class="post-description">Have the latest software releases. Always.</p>
+		</div>
+	</article>
+
+
+	<article class="glance-card" style="--accent-bg: #43A64F; --fg: #ffffff;">
+		<div class="glance-image-wrapper">
+			<img src="{{ "img/glance/secure.svg" | relURL }}" alt="Secure and open source" class="ft-image">
+		</div>
+		<div class="post-info">
+			<h2 class="post-title">Secure and open source</h2>
+			<p class="post-description">Your OS, for you.</p>
+		</div>
+	</article>
+
+
+	<article class="glance-card" style="--accent-bg: #43A64F; --fg: #ffffff;">
+		<div class="glance-image-wrapper">
+			<img src="{{ "img/glance/repos.svg" | relURL }}" alt="Add software" class="ft-image">
+		</div>
+		<div class="post-info">
+			<h2 class="post-title">Add software</h2>
+			<p class="post-description">Find everything you need in the <a rel="noopener" href="https://sourceforge.net/projects/cereus-linux/files/repos/" target="_blank">Cereus repos</a></p>
+		</div>
+	</article>
+</div>
+
+
+		{{ partial "postgrid.html" . }}
+	</div>
+	</div>
+{{ end }}

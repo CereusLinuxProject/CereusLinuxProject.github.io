@@ -1,0 +1,22 @@
+<!--
+<h1> Cereus repo mirrorlist</h1>
+-->
+<section> 
+<h4 id="str-extra-repotitle">Cereus Linux uses Void Linux repos, but complemented with Cereus Linux repos that contains extra software</h4>
+<div id="mirrorlist"></div>
+<h4 id="str-extra-reposubtitle"><a href="https://codeberg.org/cereus-linux/xrankmirrors/raw/branch/main/mirrorlist.lst">Click here if you can't see the content</a><h4>
+
+<h4 id="str-extra-reposubtitle2">you can find srcpkg files in <a href="https://codeberg.org/cereus-linux/cereus-pkgs">https://codeberg.org/cereus-linux/cereus-pkgs</a></h4>
+</section>
+
+<script>
+	const url = 'https://codeberg.org/api/v1/repos/cereus-linux/xrankmirrors/raw/mirrorlist.lst';
+	fetch(url)
+		.then(response => response.text())
+		.then(text => {
+			document.getElementById('mirrorlist').textContent = text;
+		})
+		.catch(error => {
+			console.error('Error fetching the file:', error);
+		});
+</script>

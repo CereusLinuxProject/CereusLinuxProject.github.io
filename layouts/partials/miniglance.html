@@ -1,0 +1,14 @@
+	<!-- Condensed glance links -->
+	{{ $chapters := where .Site.RegularPages "Section" "glance" }}
+	<div class="glance-condensed">
+		{{ range sort $chapters "Params.order" }}
+			{{ $title := .Title }}
+			{{ $pageID := $title | urlize }}
+			<a class="dwn" href="#{{ .Title }}">
+				<code>
+					<img class="minilogo" src="img/glance/{{ $pageID }}-logo.webp" alt="{{ $title }} logo">
+					<span class="minitext"> {{ upper $title }}</span>
+				</code>
+			</a>
+		{{ end }}
+	</div>

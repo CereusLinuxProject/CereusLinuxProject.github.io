@@ -1,0 +1,46 @@
+<!-- Top Pane (Navbar?) -->
+
+<div class="toppanel">
+	<!-- Left side of the pane, usually only has a title or logo -->
+	<div class="tp-left">
+		<a href="{{ "/" | relURL }}">
+			<img class="tp-banner" src="{{ "/img/banner.webp" | relURL }}" width="100%" />
+		</a>
+		<!--<h1>{{ .Site.Title }}</h1> -->
+	</div>
+
+	<!-- Burger menu using checkbox hack (for mobile, without using JS) -->
+	<input type="checkbox" id="burger-toggle" class="burger-checkbox">
+	<label for="burger-toggle" class="burger-menu">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+
+	<!-- Right side of the pane, usually has the navigation buttons, this example also has sub-elements -->
+	<div class="tp-right" id="mobile-menu">
+		<ul class="tp-nav">
+			<li><a href="{{ "/" | relURL }}">Home</a></li>
+			<li><a href="{{ "/wiki" | relURL }}">Wiki</a></li>
+			<li><a href="{{ "/blog" | relURL }}">Blog</a></li>
+			<li><a href="{{ "/about" | relURL }}">About</a></li>
+
+<li class="tp-dropdown">
+	<input type="checkbox" id="extras-toggle" class="dropdown-checkbox">
+	<label for="extras-toggle">Extras</label>
+	<ul class="tp-dropdown-elements">
+		<li>
+			<a href="https://codeberg.org/cereus-linux/artwork" target="_blank">Artwork</a>
+		</li>
+		<li>
+			<a href="{{ "/extras/mirrors/" | relURL }}">Mirrors</a>
+		</li>
+	</ul>
+</li>
+
+
+			<li><a href="{{ "/updates" | relURL }}">Updates</a></li>
+
+		</ul>
+	</div>
+</div>

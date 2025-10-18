@@ -1,0 +1,14 @@
+{{ if eq .Type "blog" }}
+<nav class="post-navigation">
+	{{ with .PrevInSection }}
+		<a class="nav-button prev" href="{{ .RelPermalink }}">
+			&laquo; {{ .Title }}
+		</a>
+	{{ end }}
+	{{ with .NextInSection }}
+		<a class="nav-button next" href="{{ .RelPermalink }}">
+			{{ .Title }} &raquo;
+		</a>
+	{{ end }}
+</nav>
+{{ end }}

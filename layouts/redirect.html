@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  {{ if .Params.target }}
+  <meta http-equiv="refresh" content="0; url={{ .Params.target }}">
+  <script>
+    window.location.href = "{{ .Params.target }}";
+  </script>
+  {{ else }}
+  <p>No target specified for this redirect.</p>
+  {{ end }}
+</head>
+<body>
+  {{ if .Params.target }}
+    <p>Redirecting to <a href="{{ .Params.target }}">{{ .Params.target }}</a>...</p>
+  {{ else }}
+    <p>Please set the <code>target</code> parameter in the front matter.</p>
+  {{ end }}
+</body>
+</html>

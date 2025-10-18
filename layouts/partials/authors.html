@@ -1,0 +1,11 @@
+{{ $author := .author }}
+
+{{ if eq $author "ItsZariep" }}
+	Programmer, artist
+{{ else if eq $author "KF_Art7" }}
+	FOSS enthusiast, artist and writer
+{{ else if eq $author "David Castro" }}
+	IT Technician
+{{ else }}
+	Unknown Author
+{{ end }}

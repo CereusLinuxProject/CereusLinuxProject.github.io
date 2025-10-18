@@ -1,0 +1,10 @@
+{{ if eq .Type "blog" }}
+<script src="https://utteranc.es/client.js"
+        repo="CereusLinuxProject/CereusLinuxProject.github.io"
+        issue-term="{{ .Title }}"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        label="post"
+        async>
+</script>
+{{ end }}

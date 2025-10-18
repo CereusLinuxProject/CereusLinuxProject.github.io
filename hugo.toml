@@ -1,0 +1,38 @@
+baseURL = 'https://cereus-linux.codeberg.page/'
+languageCode = 'en-us'
+title = 'Cereus Linux'
+theme = 'Tessera'
+enableSymlinks = true
+
+[security]
+  enableInlineShortcodes = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[mediaTypes]
+  [mediaTypes."application/rss+xml"]
+    suffixes = ["xml"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediaType = "application/rss+xml"
+    baseName = "feed"
+    isPlainText = true
+
+[permalinks]
+posts = "/:slug/"
+
+[pagination]
+  pagerSize = 9
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+
+[params]
+  author = "KF_Art7"
+  description = 'Cereus Linux is a lightweight, customizable Linux distribution focused on simplicity and performance.'

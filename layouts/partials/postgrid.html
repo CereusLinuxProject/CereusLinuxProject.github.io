@@ -1,0 +1,121 @@
+{{ $indextype := .Params.indextype }}
+
+{{ if eq $indextype "posts" }}
+	<!-- Posts section -->
+	<div class="posts-container">
+		{{ $paginator := .Paginate (where .Site.RegularPages "Section" "blog") }}
+		{{ range $paginator.Pages }}
+			<a href="{{ .RelPermalink }}" class="post-link">
+				<article class="post-card">
+					<div class="post-image-wrapper">
+						{{ with .Params.image }}
+							<img src="{{ . | relURL }}" alt="{{ $.Title }}" class="post-image" />
+						{{ end }}
+					</div>
+					<div class="post-info">
+						<h3 class="post-labels">{{ delimit .Params.categories " | " }}</h3>
+						<h2 class="post-title">{{ .Title }}</h2>
+						<div class="post-date">{{ .Date.Format .Site.Params.date_format }}</div>
+					</div>
+				</article>
+			</a>
+		{{ end }}
+
+		<!-- Pagination Controls -->
+		{{ partial "pagination-controls.html" . }}
+	</div>
+
+{{ else if eq $indextype "chapters" }}
+	<!-- Chapters section -->
+	{{ $chapters := where .Site.RegularPages "Section" "wiki" }}
+	{{ $grouped := dict }}
+	{{ range $chapters }}
+		{{ $section := .Params.section | default "Uncategorized" }}
+		{{ $existing := index $grouped $section | default slice }}
+		{{ $updated := $existing | append . }}
+		{{ $grouped = merge $grouped (dict $section $updated) }}
+	{{ end }}
+	<div class="chapters-container">
+		{{ range $section, $items := $grouped }}
+			<h1>{{ $section }}</h1>
+			<div class="chapter-sections-container">
+				{{ range sort $items "Params.order" }}
+					<a href="{{ .RelPermalink }}" class="post-link">
+						<article class="post-card">
+<!--
+							<div class="post-image-wrapper">
+								{{ with .Params.image }}
+									<img src="{{ . | relURL }}" alt="{{ $.Title }}" class="post-image" />
+								{{ end }}
+							</div>
+-->
+							<div class="post-info">
+<!--
+								{{ with .Params.categories }}
+									<h3 class="post-labels">{{ delimit . " | " }}</h3>
+								{{ end }}
+-->
+								<h2 class="post-title">{{ .Title }}</h2>
+							</div>
+						</article>
+					</a>
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
+
+{{ else if eq $indextype "glance" }}
+	<!-- Chapters section -->
+	{{ $chapters := where .Site.RegularPages "Section" "glance" }}
+	{{ $grouped := dict }}
+	{{ range $chapters }}
+		{{ $section := .Params.section | default "Uncategorized" }}
+		{{ $existing := index $grouped $section | default slice }}
+		{{ $updated := $existing | append . }}
+		{{ $grouped = merge $grouped (dict $section $updated) }}
+	{{ end }}
+	<div class="chapters-container">
+		{{ range $section, $items := $grouped }}
+			<h1>{{ $section }}</h1>
+			<div class="glance-container">
+				{{ range sort $items "Params.order" }}
+					{{ $accentbg := .Params.accentbg | default "#111111" }}
+					{{ $accentfg := .Params.accentfg | default "#eeeeee" }}
+						{{ $postTitle := .Title | urlize }}
+						<a href="https://sourceforge.net/projects/cereus-linux/files/isos/beta/latest/{{ $postTitle }}/" class="post-link">
+						<article id="{{ .Title }}" class="glance-card" style="--accent-bg: {{ $accentbg }}; --fg: {{ $accentfg }};">
+							<div class="glance-image-wrapper">
+								{{ $imageFileName := printf "%s.webp" (.Title | urlize) }}
+								{{ $imagePath := printf "/img/glance/%s" $imageFileName }}
+								<img src="{{ $imagePath }}" alt="{{ .Title }}" class="glance-image" />
+							</div>
+							<div class="post-info">
+								{{ with .Params.categories }}
+									<h3 class="post-labels">{{ delimit . " | " }}</h3>
+								{{ end }}
+								<h2 class="post-title">{{ .Title }}</h2>
+								{{ with .Description }}
+									<p class="post-description">{{ . }}</p>
+								{{ end }}
+
+								<div class="sflogo">
+									<img  alt="Download Cereus Linux" src="https://sourceforge.net/sflogo.php?type=18&amp;group_id=3477258">
+								</div>
+
+							</div>
+						</article>
+					</a>
+				{{ end }}
+			</div>
+		{{ end }}
+	</div>
+
+{{ else }}
+	<!-- Fallback content -->
+	<div style="grid-column: 1 / -1;">
+		<p>No content found for this page type. Please make sure you defined 
+			<code class="language-plaintext highlighter-rouge">indextype: posts</code>
+			or <code class="language-plaintext highlighter-rouge">indextype: chapters</code>.
+		</p>
+	</div>
+{{ end }}
