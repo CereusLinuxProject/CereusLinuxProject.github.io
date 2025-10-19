@@ -20,12 +20,15 @@
 }
 
 #commit-feed {
-	width: 66%;
+	width: 100%;
 	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+	gap: 10px;
 }
 .aboutpage .post .post-postcontent
 {
-    width:95%
+	width:95%
 }
 
 
@@ -91,7 +94,7 @@
 }
 
 /* Responsive adjustments */
-@media only screen and (max-aspect-ratio: 1/1) {
+@media only screen and (max-width: 768px) and (max-aspect-ratio: 1/1) {
 	.commit-table td {
 		display: block;
 		width: 100%;
@@ -100,5 +103,12 @@
 	.commit-table td:first-child {
 		width: 100%;
 		text-align: center;
+	}
+	#commit-feed {
+		width: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
+		gap: 10px;
 	}
 }

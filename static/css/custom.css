@@ -221,9 +221,9 @@ input[type="text"] {
 
 @media only screen and (max-width: 768px) and (max-aspect-ratio: 1/1)
 {
-.dropdown-checkbox:checked + label + .tp-dropdown-elements {
-    display: block;
-}
+	.dropdown-checkbox:checked + label + .tp-dropdown-elements {
+		display: block;
+	}
 	#left-container .search-input {
 		display:block;
 	}
