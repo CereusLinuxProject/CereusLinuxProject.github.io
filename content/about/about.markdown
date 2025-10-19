@@ -1,6 +1,6 @@
 ---
 layout: aboutpage
-title: About
+title: About Cereus Linux
 authors:
   - KF_Art7
   - ItsZariep
@@ -15,6 +15,6 @@ This project started as a hobby, driven by our needs and differences with Void L
 
 ---
 
-This blog uses [Hugo](https://gohugo.io), a static-site generator, with [Tessera](https://codeberg.org/ItsZariep/Tessera) theme, created by ItsZariep
+This Page uses [Hugo](https://gohugo.io), a static-site generator, with [Tessera](https://codeberg.org/ItsZariep/Tessera) theme, created by ItsZariep
 
 You can see the page source code and the custom theme changes on [Cereus pages source code](https://github.com/CereusLinuxProject/CereusLinuxProject.github.io).

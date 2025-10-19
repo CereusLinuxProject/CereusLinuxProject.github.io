@@ -1,5 +1,5 @@
 ---
-title: Cereus Mirrors
+title: Cereus Lastest Updates
 layout: aboutpage
 url: "/updates/"
 authors:
